@@ -8,14 +8,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class EmployeeDTO {
 
     private long id;
     private String name;
     private String doj;
     private boolean isActive;
-
 
     public long getId() {
         return id;

@@ -3,6 +3,8 @@ package com.yash.First_CRUD.services;
 import com.yash.First_CRUD.dto.EmployeeDTO;
 import com.yash.First_CRUD.repositories.EmployeeRepository;
 
+import java.util.List;
+
 public class EmployeeServices {
 
     final EmployeeRepository empRepository = new EmployeeRepository();
@@ -13,6 +15,10 @@ public class EmployeeServices {
 
     public EmployeeDTO getEmployee(long id) {
         return empRepository.getEmployee(id);
+    }
+
+    public List<EmployeeDTO> getAllEmployees() {
+        return empRepository.getAllEmployees();
     }
 
 }
